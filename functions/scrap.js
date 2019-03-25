@@ -1,4 +1,4 @@
-const {fetchData} = require("../src/srcap-util")
+const {fetchData} = require("../src/scrap-util")
 
 exports.handler = function(event, context, callback) {
   fetchData().then(response => {
