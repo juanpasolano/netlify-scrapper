@@ -2,7 +2,7 @@ const rp = require("request-promise");
 const $ = require("cheerio");
 const url = "https://www.asxenergy.com.au/";
 
-export const fetchData = () => {
+const fetchData = () => {
   return rp(url).then(html => {
     const table = $("#home-prices", html);
     const headers = [];
