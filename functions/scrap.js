@@ -1,7 +1,10 @@
+const {fetchData} = require("../src/srcap-util")
+
 exports.handler = function(event, context, callback) {
-  // your server-side functionality
-  callback(null, {
-    statusCode: 200,
-    body: "Hello, World Pipe"
-  });
+  fetchData().then(response => {
+    callback(null, {
+      statusCode: 200,
+      body: response
+    });
+  })
 };
