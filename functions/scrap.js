@@ -1,5 +1,5 @@
-const rp = require("request-promise");
-const $ = require("cheerio");
+import rp from "request-promise";
+import $ from "cheerio";
 const url = "https://www.asxenergy.com.au/";
 
 const fetchData = () => {
